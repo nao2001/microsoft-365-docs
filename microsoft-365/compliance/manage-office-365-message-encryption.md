@@ -168,11 +168,11 @@ For more information about how Office 365 implements encryption for emails and e
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## Ensure all external recipients use the OME Portal to read encrypted mail — Office 365 Advanced Message Encryption only
+## Ensure all external recipients use the OME Portal to read encrypted mail
 
-If you have Office 365 Advanced Message Encryption, you can use custom branding templates to force recipients to receive a wrapper mail that directs them to read encrypted email in the OME Portal instead of using Outlook or Outlook on the web. You might want to do this if you use want greater control over how recipients use the mail they receive. For example, if external recipients view email in the web portal, you can set an expiration date for the email, and you can revoke the email. These features are only supported through the OME Portal. You can use the Encrypt option and the Do Not Forward option when creating the mail flow rules.
+You can use custom branding templates to force recipients to receive a wrapper mail that directs them to read encrypted email in the OME Portal instead of using Outlook or Outlook on the web. You might want to do this if you use want greater control over how recipients use the mail they receive. For example, if external recipients view email in the web portal, you can set an expiration date for the email, and you can revoke the email. These features are only supported through the OME Portal. You can use the Encrypt option and the Do Not Forward option when creating the mail flow rules.
 
-### Create a custom template to force all external recipients to use the OME Portal and for encrypted email to be revocable and expire in 7 days
+### Create a custom template to force all external recipients to use the OME Portal and for encrypted email
 
 1. Use a work or school account that has global administrator permissions in your Office 365 organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
